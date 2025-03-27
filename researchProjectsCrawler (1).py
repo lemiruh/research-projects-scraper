@@ -102,7 +102,7 @@ def create_research_output_2_row(target_table_td_tag_elements, main_row):
 
 
 def retrieve_data_of_one_project(driver):
-    # the table we want
+    #the table we want
     table = driver.find_elements(By.XPATH, "//body/table/tbody")[3]
     tr_tag_elements = table.find_elements(By.XPATH, "./*")
     main_row = {}
@@ -170,7 +170,7 @@ def main(projects_year):
     drop_down_menu.select_by_value(projects_year)
 
     # find the form and submit to display every research paper
-    form_search = driver.find_element(By.NAME, "scrrm00541")
+    form_search = driver.find_element(By.NAME, "___")
     form_search.submit()
 
     main_sheet = []
@@ -215,17 +215,6 @@ def main(projects_year):
 
     write_xlsx_file("output_year_" + projects_year, main_sheet, objective_achieved_sheet, research_output_1_sheet, research_output_2_sheet, other_impact_sheet)
 
-
-main('2010')
-# main('2011')
-# main('2012')
-# main('2013')
-# main('2014')
-# main('2015')
-# main('2016')
-# main('2017')
-# main('2018')
-# main('2019')
-# main('2020')
+main('2020')
 # main('2021')
 # main('2022')
