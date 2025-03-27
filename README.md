@@ -16,7 +16,7 @@ This project contains Python scripts for automating the extraction of academic r
 - **Git/GitHub** (version control)
 
 ## 📁 Project Structure
-- `researchProjectsCrawler.py`: A crawler that scrapes general project data for each year and outputs multiple structured Excel sheets (objectives, outputs, impacts).
+- `research_projects_crawler.py`: A crawler that scrapes general project data for each year and outputs multiple structured Excel sheets (objectives, outputs, impacts).
 - `web_scraping_login.py`: A more advanced crawler that handles login authentication, navigates through multiple browser windows, and extracts reviewer panel comments and evaluation scores.
 
 ## 📌 Use Cases
