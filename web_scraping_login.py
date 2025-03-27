@@ -401,7 +401,7 @@ def main(start_row_index=2):
             # Handle browser crash by restarting and continuing
             driver.quit()
             driver = initialize_driver()
-            login(driver, "slim16", "RO2230cyc#")
+            login(driver, "username", "password")
             navigate_to_projects(driver)
             search_projects(driver)
             time.sleep(3)
